@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+    
+    <!-- Navbar -->
+    <nav style="background-color: orange;" class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">Digital Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
+
+<section id="about" style="padding: 40px 20px; text-align: center; ">
+    <div class="container bg-light">
+        <div class="row align-items-center about-container py-3">
+            <!-- Image Column -->
+            <div class="col-12 col-md-6" style="position: relative;">
+                <!-- Background image -->
+                <div style="background-image: url('your-background-image.jpg'); background-size: cover; background-position: center; position: absolute; top: 0; left: -20px; width: 100%; height: 100%; z-index: -1; border-radius: 10px;"></div>
+                
+                <!-- Foreground image -->
+                <img src="manoj.jpg" 
+                     alt="Baji Manoj" 
+                     style="max-width: 100%; height: 400px; border-radius: 10px; margin-left: -20px; margin-bottom: 20px; padding-top: 20px; padding-left: 50px; animation: fadeInLeft 2s ease;">
+            </div>
+            <!-- Text Column -->
+            <div class="col-12 col-md-6">
+                <h2 style="color: orange; font-family: Arial, sans-serif; font-weight: bold; animation: fadeIn 2s ease; margin-bottom: 20px; text-align: center;">
+                    About Me
+                </h2>
+                <p style="font-size: 18px; line-height: 1.6; color: #333; text-align: justify; animation: slideInRight 2s ease;">
+                    Hi, I'm Baji Manoj, a passionate food technologist with a strong foundation in food chemistry, baking technology, and regulatory affairs. As a fresher, I focus on quality assurance and control to ensure the highest standards in biscuit production and processing. I also have skills in food safety protocols, ingredient quality management, and experience in baking techniques, ensuring consistent product quality, in  the food industry.
+                </p>
+                <div class="typing-animation" style="font-size: 20px; font-weight: 600; color: #555; animation: typing 3s steps(40, end), blink 0.75s step-end infinite;">
+                    Food Technologist | Quality Assurance | Product development
+                </div>
+                <br>
+                <!-- Resume Button (uncomment the below line if you need the button) -->
+                <a href="resume_link.pdf" style="background-color: orange; color: white; padding: 12px 25px; border-radius: 5px; text-decoration: none; font-size: 18px; display: inline-block;">View Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add these animations to the CSS or within a <style> tag -->
+<style>
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-right-color: transparent; }
+}
+
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 100%; /* Ensures full width after typing effect */
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+</style>
+
+
+
+
+    <!-- Skills Section -->
+<section id="skills" style="padding: 60px 20px; background-color: #f8f9fa; padding-top: 20px; margin-bottom: 100px;">
+    <div class="container pt-5">
+        <h2 style="text-align: center; color: orange; margin-bottom: 40px;padding-top: 10px;">Technical Skills</h2>
+        <div class="row">
+            <!-- Skill 1 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Food Bio Chemistry</h5>
+                        <p class="card-text" style="color: white;">Expertise in food chemistry and its applications.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color:orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Baking Technology</h5>
+                        <p class="card-text" style="color: white;">Knowledge of baking technology and its applications.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Regulatory Affairs</h5>
+                        <p class="card-text" style="color: white;">Understanding of regulatory affairs in the food industry.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 4 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Food Safety Protocols</h5>
+                        <p class="card-text" style="color: white;">Knowledge of food safety protocols and their implementation.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Skill 5 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Process Engineering</h5>
+                        <p class="card-text" style="color: white;">Knowledge of food processing techniques and equipment.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 6 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color:orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">HACCP Principles</h5>
+                        <p class="card-text" style="color: white;">HACCP is a systematic approach to food safety that identifies Hazard</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 7 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none ; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Quality Assurance</h5>
+                        <p class="card-text" style="color: white;">Expertise in quality assurance and control in the food industry.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 8 -->
+            <div class="col-12 col-md-6 col-lg-3" style="text-align: center; margin-bottom: 30px;">
+                <div class="card" style="background-color: orange; border: none; border-radius: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white;">Food Product Development</h5>
+                        <p class="card-text" style="color: white;">Knowledge of food product development and its applications.</p>
+                        <div class="star-rating" style="margin-top: 10px;">
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gold;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                            <span style="color: gray;">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .soft-skills {
+      background-color: #ff9800;
+      padding: 50px 0;
+      color: white;
+    }
+    .skill-card {
+      background-color: white;
+      color: #ff9800;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+    h2 {
+      animation: fadeInUp 2s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <style>
+        /* Soft Skills Section Styling */
+        .soft-skills {
+          background-color: #ff9800;
+          padding: 60px 20px; /* Added padding to soft skills section */
+          color: white;
+        }
+        .skill-card {
+          background-color: white;
+          color: #ff9800;
+          padding: 20px;
+          border-radius: 10px;
+          transition: transform 0.3s ease;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .skill-card:hover {
+          transform: scale(1.05);
+        }
+        h2 {
+          animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        /* Certifications Section Styling */
+        #certifications {
+          padding: 60px 20px; /* Added padding to certifications section */
+          background-color: orange;
+        }
+        #certifications h2 {
+          text-align: center;
+          color: white;
+          margin-bottom: 40px;
+        }
+        .certification-item {
+          margin-bottom: 30px;
+          padding: 20px;
+          border-radius: 10px;
+          background: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.5s ease;
+          animation: slideIn 1s ease-out;
+        }
+        .certification-item img {
+          border-radius: 10px;
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 20px; /* Space between image and text */
+        }
+        .certification-item h3 {
+          color: orange;
+          margin-bottom: 15px;
+        }
+        .certification-item p {
+          color: #333;
+          line-height: 1.6; /* Improve text readability */
+        }
+        @keyframes slideIn {
+          0% { transform: translateY(20px); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+    
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+          .certification-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+          }
+    
+          .certification-item img {
+            max-width: 50%; /* Restrict image width to 50% on larger screens */
+            margin-right: 20px; /* Space between image and text */
+            margin-bottom: 0; /* Remove bottom margin on larger screens */
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Soft Skills Section -->
+      <section class="soft-skills">
+        <div class="container text-center">
+          <h2>Soft Skills</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h4>Problem Solving</h4>
+                <p>Creative and analytical approaches to solving industry challenges.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h4>Teamwork</h4>
+                <p>Collaborative mindset, working effectively within diverse teams.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <h4>Leadership</h4>
+                <p>Managing teams with a focus on collaboration and efficiency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Certifications Section -->
+      <section id="certifications">
+        <div class="container">
+          <h2>Certifications</h2>
+          <div class="row">
+            <!-- Certification 1: Novel Technologies of Food -->
+            <div class="col-12 col-md-6">
+              <div class="certification-item">
+                <img src="https://www.dimins.com/wp-content/uploads/2023/05/data-and-food-innovation-ftrd.jpg" alt="Novel Technologies of Food">
+                <div>
+                  <h3>Novel Technologies of Food</h3>
+                  <p>This certification covers advanced food technologies, including innovative methods for food preservation and processing.</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Certification 2: Food Oils and Fats -->
+            <div class="col-12 col-md-6">
+              <div class="certification-item">
+                <img src="https://d2jx2rerrg6sh3.cloudfront.net/images/Article_Images/ImageForArticle_23437_16724068370655750.jpg" alt="Food Oils and Fats">
+                <div>
+                  <h3>Food Oils and Fats</h3>
+                  <p>This certification deals with the properties, applications, and quality control of food oils and fats.</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Certification 3: GMP in Food -->
+            <div class="col-12 col-md-6">
+              <div class="certification-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD2tUagjcUQb8CIyIFmKgo2P2H2Vpi2pvBbg0q8UKZLwP6JQLlGOC16U1ic2wJMCa615Y&usqp=CAU" alt="GMP in Food">
+                <div>
+                  <h3>GMP in Food</h3>
+                  <p>This certification focuses on Good Manufacturing Practices (GMP) in the food industry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- CSS Animations -->
+<style>
+.card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+}
+
+.card:active {
+    transform: translateY(-10px); /* Card moves up slightly when clicked */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Add stronger shadow */
+}
+
+/* Ensure image size remains fixed */
+.card img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Card content movement */
+.card-body {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.card:active .card-body {
+    transform: translateY(-20px); /* Content moves up slightly */
+}
+
+</style>
+
+<!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" style="padding: 60px 20px; background-color: #f8f9fa;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Projects</h2>
+        <div class="row">
+            <!-- Project 1: Development of Computer Vision Model -->
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card" style="background-color: orange; color: white; height: 100%;">
+                    <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/digital-image-processing-1.jpg" class="card-img-top" alt="Computer Vision Model" style="height: 300px; object-fit: cover; width: 100%;" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                    <div class="card-body" style="padding: 20px;">
+                        <h5 class="card-title">Development of Computer Vision Model for Estimating Size and Weight of Beetroot</h5>
+                        <h6 class="card-subtitle mb-2 text-light">Guided by: Mr.Venkat</h6>
+                        <p class="card-text">Brief description of the project.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#project1Modal">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Biodegradable Corn Husk Straw -->
+            <div class="col-12 col-md-6 mb-4">
+                <div class="card" style="background-color: orange; color: white; height: 100%;">
+                    <img src="https://careforplant.com/wp-content/uploads/2024/01/1638110090_106-pro-dachnikov-com-p-kukuruza-foto-109-min.jpg" class="card-img-top" alt="Biodegradable Corn Husk Straw" style="height: 300px; object-fit: cover; width: 100%;" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                    <div class="card-body" style="padding: 20px;">
+                        <h5 class="card-title">Development And Standardization Of Biodegradable Corn Husk Straw</h5>
+                        <h6 class="card-subtitle mb-2 text-light">Guided by: Mrs.Madhuri</h6>
+                        <p class="card-text">Brief description of the project.</p>
+                        <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#project2Modal">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project1ModalLabel">Development of Computer Vision Model for Estimating Size and Weight of Beetroot</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6><strong>Objective:</strong></h6>
+                <p>To develop a computer vision model that accurately estimates the size and weight of beetroot to improve the efficiency of sorting and processing in the food industry.</p>
+                <h6><strong>Procedure:</strong></h6>
+                <p>Utilized image processing techniques and machine learning algorithms to train a model on a dataset of beetroot images. The model was tested and validated for accuracy and precision.</p>
+                <h6><strong>Conclusion:</strong></h6>
+                <p>The developed model demonstrated high accuracy in estimating beetroot size and weight, leading to potential improvements in sorting and processing efficiency.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project2ModalLabel">Development of Biodegradable Corn Husk Straw</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6><strong>Objective:</strong></h6>
+                <p>To create a sustainable alternative to plastic straws using corn husk, focusing on biodegradability and environmental impact.</p>
+                <h6><strong>Procedure:</strong></h6>
+                <p>Processed corn husks into straw material, tested for durability and biodegradability. Conducted environmental impact assessments to validate the benefits of the material.</p>
+                <h6><strong>Conclusion:</strong></h6>
+                <p>The corn husk straws were successfully developed, showing excellent biodegradability and a significant reduction in environmental impact compared to plastic straws.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals for Projects -->
+<!-- Modal 1 -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project1ModalLabel">Development of Computer Vision Model for Estimating Size and Weight of Beetroot</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6><strong>Objective:</strong></h6>
+                <p>To develop a computer vision model that accurately estimates the size and weight of beetroot to improve the efficiency of sorting and processing in the food industry.</p>
+                <h6><strong>Procedure:</strong></h6>
+                <p>Utilized image processing techniques and machine learning algorithms to train a model on a dataset of beetroot images. The model was tested and validated for accuracy and precision.</p>
+                <h6><strong>Conclusion:</strong></h6>
+                <p>The developed model demonstrated high accuracy in estimating beetroot size and weight, leading to potential improvements in sorting and processing efficiency.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="project2ModalLabel">Development of Biodegradable Corn Husk Straw</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6><strong>Objective:</strong></h6>
+                <p>To create a sustainable alternative to plastic straws using corn husk, focusing on biodegradability and environmental impact.</p>
+                <h6><strong>Procedure:</strong></h6>
+                <p>Processed corn husks into straw material, tested for durability and biodegradability. Conducted environmental impact assessments to validate the benefits of the material.</p>
+                <h6><strong>Conclusion:</strong></h6>
+                <p>The corn husk straws were successfully developed, showing excellent biodegradability and a significant reduction in environmental impact compared to plastic straws.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Achievements Section -->
+<section id="achievements" style="padding: 60px 20px; background-color: #f8f9fa;">
+    <div class="container">
+        <h2 style="text-align: center; color: orange; margin-bottom: 40px;">Achievements</h2>
+        <div class="row">
+            <!-- Achievement 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card" style="border: none; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #333;">Certificate of Appreciation</h5>
+                        <p class="card-text" style="color: #666;">Received for outstanding service and dedication as a volunteer for UEAC.</p>
+                    </div>
+                </div>
+            </div>
+        </br>
+            <!-- Achievement 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card" style="border: none; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #333;">Event Coordinator </h5>
+                        <p class="card-text" style="color: #666;">Awarded for exceptional coordination and organizational skills during World Food Day.</p>
+                    </div>
+                </div>
+            </div>
+        </br>
+            <!-- Achievement 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card" style="border: none; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #333;">Early Achievements</h5>
+                        <p class="card-text" style="color: #666;">Participated in the Srujunankura event, Completed a project on message encryption</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" style="padding: 60px 20px; background-color: #f8f9fa;">
+    <div class="container">
+        <h2 style="text-align: center; color: orange; margin-bottom: 40px;">Education</h2>
+        <div class="row">
+            <!-- Education 1 -->
+            <div class="col-12 col-md-6">
+                <div style="padding: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h5 style="color: #333;">Vignan University – B.Tech Food Technology</h5>
+                    <p style="color: #666;">October 2021 – April 2025<br>Guntur, Andhra Pradesh<br>Ongoing<br>GPA – 8.0</p>
+                </div>
+            </div>
+        </br>
+            <!-- Education 2 -->
+            <div class="col-12 col-md-6">
+                <div style="padding: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h5 style="color: #333;">Sri Chaitanya – XI to XII</h5>
+                    <p style="color: #666;">June 2019 – April 2021<br>Bhimavaram, Andhra Pradesh<br>914 / 1000</p>
+                </div>
+            </div>
+        </br>
+            <!-- Education 3 -->
+            <div class="col-12 col-md-6"></div>
+                <div style="padding: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h5 style="color: #333;">Aditya E.M School – IX to X</h5>
+                    <p style="color: #666;">October 2018 – April 2019<br>Bhimavaram, Andhra Pradesh<br>9.8/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<!-- Contact Section -->
+<section id="contact" style="padding: 60px 20px; background-color: orange; color: white;">
+    <div class="container text-center">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Feel free to reach out via any of the following platforms:</p>
+        
+        <!-- Social Media Links -->
+        <div class="social-icons" style="margin-top: 20px;">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/baji-yanugulla-506b65252/" target="_blank" style="margin: 0 10px;">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" style="width: 40px;">
+            </a>
+
+            <!-- Gmail -->
+            <a href="Manojyanugula@gmail.com" style="margin: 0 10px;">
+                <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Gmail" style="width: 40px;">
+            </a>
+            <a href="6301963376">
+                <img src="https://static-00.iconduck.com/assets.00/phone-icon-2048x2048-nottqc8j.png"alt="contact" style="width: 40px;">
+            </a>
+            
+        </div>
+        <!-- Footer -->
+    <p style="margin: 0; font-size: 16px;text-align: center;">Contact: 6301963376</p>
+    <p    style="margin: 0; font-size: 16px;text-align: center;">Email: <a href="mailto:Manojyanugula@gmail.com" style="text-decoration: none; "class="text-light">Manojyanugula@gmail.com</a></p>
+</section>
+</body>
+</html>
+
+
+
+
+
+
